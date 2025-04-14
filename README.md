@@ -6,26 +6,35 @@ Welcome to my personal portfolio website! This is a project showcasing my work, 
 You can view the live version of my portfolio website here: [www.shawonline.me]
 
 ## Features
-* About Me: A brief introduction about who I am, my journey, and my skills.
+- Home: The landing page with an overview of my portfolio and quick access to key sections.
 
-* Projects: A collection of my notable projects, including descriptions and links to repositories or live versions.
+- About: A brief introduction about who I am, my journey, and my skills.
 
-* Contact: A contact form to reach me (if applicable), or contact details.
+- Services: Details on the services I offer, including any specializations or areas of expertise.
 
-* Responsive Design: Optimized for various screen sizes (mobile, tablet, desktop).
+- Skills: A breakdown of the technical and soft skills I possess, highlighting my strengths.
+
+- Projects: A collection of my notable projects, including descriptions and links to repositories or live versions.
+
+- Contact: A contact form to reach me (if applicable), or contact details.
+
 
 ## Technologies Used
-HTML5
+- HTML5
 
-CSS3
+- CSS3
 
-JavaScript (or TypeScript, if applicable)
+- Responsive Web Design
 
-[Any frameworks or libraries used, e.g., React, Angular, Vue]
+- Java
 
-[Backend technologies, if applicable]
+- JavaScript
 
-[Any other tools or services, e.g., GitHub Pages, Netlify, Firebase, etc.]
+- Python
+
+- React + Reducx
+
+- Presentation Skills
 
 ## Installation
 To run this project locally:
@@ -47,8 +56,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 You can reach me via:
 
-Email: [admin@shawonline.me]
+- Email: [admin@shawonline.me]
 
-LinkedIn: [https://www.linkedin.com/in/shawon1024/]
+- LinkedIn: [https://www.linkedin.com/in/shawon1024/]
 
-GitHub: [https://github.com/Shawon1024/]
+- GitHub: [https://github.com/Shawon1024/]
