@@ -154,7 +154,7 @@ section .title::after
 
 .home {
     display: flex;
-    background: url("Images/Background.jpg") no-repeat;
+    background: url("Images/Background.JPG") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
