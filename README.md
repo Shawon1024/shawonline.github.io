@@ -30,19 +30,11 @@ JavaScript (or TypeScript, if applicable)
 ## Installation
 To run this project locally:
 
-Clone this repository:
+1. Clone this repository: `git clone https://github.com/Shawon1024/shawonline.github.io.git`
 
-bash
-Copy
-Edit
-git clone https://github.com/Shawon1024/your-portfolio-repo.git
-Navigate to the project directory:
+2. Navigate to the project directory: `cd shawonline.github.io`
 
-bash
-Copy
-Edit
-cd your-portfolio-repo
-Open the index.html file in your browser to see the website.
+3. Open the `index.html` file in your browser to see the website.
 
 If you are using any tools like Node.js, npm, or any other dependencies, add the necessary steps to install and run them here.
 
