@@ -6,13 +6,13 @@ Welcome to my personal portfolio website! This is a project showcasing my work, 
 You can view the live version of my portfolio website here: [www.shawonline.me]
 
 ## Features
-About Me: A brief introduction about who I am, my journey, and my skills.
+* About Me: A brief introduction about who I am, my journey, and my skills.
 
-Projects: A collection of my notable projects, including descriptions and links to repositories or live versions.
+* Projects: A collection of my notable projects, including descriptions and links to repositories or live versions.
 
-Contact: A contact form to reach me (if applicable), or contact details.
+* Contact: A contact form to reach me (if applicable), or contact details.
 
-Responsive Design: Optimized for various screen sizes (mobile, tablet, desktop).
+* Responsive Design: Optimized for various screen sizes (mobile, tablet, desktop).
 
 ## Technologies Used
 HTML5
