@@ -3,439 +3,269 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compitable" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShawOnline.Me | Welcome to My Site</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="icon" type="image/x-icon" href="Images/favicon.png">
     <link rel="stylesheet" href="Styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="JavaScript/JavaScript.js"></script>
-    <script src="JavaScript/JavaScript2.js"></script>
-
+    <link rel="stylesheet" href="Mediaqueries.css">
+    
 </head>
     
 <body>
 
-    <!-- SCROLL BUTTON STARTS -->
+    <!-- LOGO & NAVIGATION BAR -->
 
-    <div class="scroll-up-button">
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
-    </div>
-
-    <!-- NAVIGATION BAR STARTS -->
-
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="Index.html">Shaw<span>Online</span></a></div>
-            <ul class="menu">
-                <li><a href="Index.html#home">HOME</a></li>
-                <li><a href="Index.html#about">ABOUT</a></li>
-                <li><a href="Index.html#services">SERVICES</a></li>
-                <li><a href="Index.html#skills">SKILLS</a></li>
-                <li><a href="Index.html#projects">PROJECTS</a></li>
-                <li><a href="Index.html#contact">CONTACT</a></li>
+    <nav id="desktop-nav">
+        <div class="logo">ShawOnline</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="menu-btn">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">ShawOnline</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
 
-    <!-- HOME SECTION STARTS -->
-
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">MS SHAWON</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="https://www.fiverr.com/ms_shawon" target="_blank">HIRE PROJECT</a>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="Images/Profile Photo.png" alt="ShawOnline Picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">SHAWON</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('CV.docx')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="Images/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://linkedin.com/in/Shawon1024'"/>
+                <img src="Images/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/Shawon1024'"/>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION STARTS -->
-
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">ABOUT</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="Images/Profile%20Picture.jpg" alt="Profile Picture" />
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="Images/Profile Photo 2.png" alt="Profile Picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="Images/experience.png" alt="Experience Icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>2+ years <br/>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="Images/education.png" alt="Experience Icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.Sc. (Hons) Computer Science</p>
+                    </div>
                 </div>
-                <div class="column right">
-                    <div class="text">Hello!!! This is MS SHAWON. I'm a <span class="typing-2"></span></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <a href="CV.docx" target="_blank">DOWNLOAD CV</a>
+                <div class="text-container">
+                    <p>
+                        something somthofhsoifghvdso sugh h ishgi h gisahgihai uigigiyu
+                    </p>
                 </div>
             </div>
         </div>
+        <img src="Images/arrow.png" alt="Go Down" class="icon arrow" onclick="location.href='./#experience'"/>
     </section>
 
-    <!-- SERVICES SECTION STARTS -->
-
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">SERVICES</h2>
-            <div class="serv-content">
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                        <div class="text">Web Design</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                <article>
+                    <img src="Images/checkmark.png" alt="Experience icon" class="icon"/>
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
                     </div>
+                </article>
+                <article>
+                    <img src="Images/checkmark.png" alt="Experience icon" class="icon"/>
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/checkmark.png" alt="Experience icon" class="icon"/>
+                    <div>
+                        <h3>SASS</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/checkmark.png" alt="Experience icon" class="icon"/>
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/checkmark.png" alt="Experience icon" class="icon"/>
+                    <div>
+                        <h3>TypeScript</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/checkmark.png" alt="Experience icon" class="icon"/>
+                    <div>
+                        <h3>Material UI</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
                 </div>
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-line-chart" aria-hidden="true"></i>
-                        <div class="text">Web Development</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
                 </div>
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-code" aria-hidden="true"></i>
-                        <div class="text">Software Development</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                        <div class="text">Web Design</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                        <div class="text">Web Design</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                        <div class="text">Web Design</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS SECTION STARTS -->
-
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">MY SKILLS</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills and experences</div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <a href="https://www.sololearn.com/profile/27223773" target="_blank">READ MORE</a>
-                </div>
-
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>95%</span>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                    <article>
+                        <img src="Images/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>PostgreSQL</h3>
+                            <p>Basic</p>
                         </div>
-                        <div class="line html">
-                    </div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>80%</span>
+                    </article>
+                    <article>
+                        <img src="Images/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Intermediate</p>
                         </div>
-                        <div class="line css"></div>
+                    </article>
+                    <article>
+                        <img src="Images/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Express JS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="Images/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
                     </div>
-                    
-                    <div class="bars">
-                        <div class="info">
-                            <span>Responsive Web Design</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="line responsive"></div>
-                    </div>
-                    
-                    <div class="bars">
-                        <div class="info">
-                            <span>Python</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line python"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>Java</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line java"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="line javascript"></div>
-                    </div>
-                    
-                    <div class="bars">
-                        <div class="info">
-                            <span>React + Redux</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line react"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>Presentation Skills</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line presentation"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS SECTION STARTS -->
-
-    <section class="projects" id="projects">
-        <div class="max-width">
-            <h2 class="title">PROJECTS</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="Images/Project-1.jpg" alt="Project Image" />
-                        <div class="text">SAJEK VALLEY</div>
-                        <p>Find your best staycation holiday for a reasonable price in Sajek Valley</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="Images/Project-2.jpg" alt="Project Image" />
-                        <div class="text">BANDARBAN</div>
-                        <p>A place for your holiday plan with friends and families</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="Images/Project-3.jpg" alt="Project Image" />
-                        <div class="text">OXCATION</div>
-                        <p>Spend time in the most popular and visited place in London</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="Images/Project-4.jpg" alt="Project Image" />
-                        <div class="text">Project 4</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="Images/Project-5.jpg" alt="Project Image" />
-                        <div class="text">Project 5</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="popup-image">
-                <span>&times;</span>
-                <img src="Images/Project-1.jpg" alt="Project-1" />
-            </div>
-
-        </div>
-    </section>
-
-    <script>
-        document.querySelectorAll('img').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-image').style.display = 'block';
-                document.querySelector('.popup-image img').src = image.getAttribute('src');
-            }
-        });
-
-        document.querySelector('.popup-image span').onclick = () => {
-            document.querySelector('.popup-image').style.display = 'none';
-        }
-    </script>
-
-    <!-- CONTACT SECTION STARTS -->
-
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">CONTACT</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in touch</div>
-                    <p>Feel free to get in touch with me for your projects</p>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                            <div class="info">
-                                <div class="head">Name: </div>
-                                <div class="sub-title">MS SHAWON</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <div class="info">
-                                <div class="head">Address: </div>
-                                <div class="sub-title">London, UK</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            <div class="info">
-                                <div class="head">Contact No: </div>
-                                <div class="sub-title"><a href="tel:+447888370889">+447 888 370 889</a></div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <div class="info">
-                                <div class="head">Email: </div>
-                                <div class="sub-title"><a href="mailto:Admin@ShawOnline.Me">Admin@ShawOnline.Me</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text">Follow me on: </div>
-
-                    <div class="socials">
-                        <div class="icon">
-                            <a href="https://www.facebook.com/Shawon1024" target="_blank"><i class="fa fa-facebook"></i></a>
-                        </div>
-
-
-                        <div class="icon">
-                            <a href="https://www.twitter.com/SamShawon" target="_blank"><i class="fa fa-twitter"></i></a>
-                        </div>
-
-
-                        <div class="icon">
-                            <a href="https://www.instagram.com/MSamShawon" target="_blank"><i class="fa fa-instagram"></i></a>
-                        </div>
-                        
-                        <div class="icon">
-                            <a href="https://www.linkedin.com/in/Shawon1024" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="column right">
-                    <div class="text">Send Message</div>
-                    <form action="mail.php" method="POST">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" id="name" placeholder="Full Name" required>
-                            </div>
-
-                            <div class="field phone">
-                                <input type="tel" id="phone" placeholder="Contact No" pattern="[0-9]{11}" required>
-                            </div>
-                        </div>
-
-                        <div class="fields">
-                            <div class="field email">
-                                <input type="email" id="email" placeholder="Email Address" required>
-                            </div>
-
-                            <div class="field subject">
-                                <input type="text" id="subject" placeholder="Subject" required>
-                            </div>
-                         </div>       
-
-                            <div class="field message">
-                                <textarea cols="30" rows="10" id="message" placeholder="Your Message" required></textarea>
-                            </div>
-
-                            <div class="button">
-                                <input type="submit" value="SUBMIT">
-                           </div>
-                           
-                           <p id="responseMessage"></p>
-                    </form>
-                    
-                    <script>
-                        const form = document.querySelector('form');
-                        const responseMessage = document.getElementById('responseMessage');
-                        
-                        form.addEventListner('submit', (e) => 
-                        {
-                            e.preventDefault();
-                            
-                            const formData = new FormData(form);
-                            
-                            fetch(form.action, 
-                            {
-                                method: form.method,
-                                body: formData
-                            })
-                            
-                            .then(response => 
-                            {
-                                if (response.ok)
-                                {
-                                    responseMessage.textContent = 'Email Sent Successfully!!!';
-                                    responseMessage.classList.add('success');
-                                }
-                                
-                                else 
-                                {
-                                    responseMessage.textContent = 'Unable to Send Email!!! Please Try Again.';
-                                    responseMessage.classList.add('failure');
-                                }
-                            })
-                            
-                            .catch (error => 
-                            {
-                                responseMessage.textContent = 'An Error Occurred!!! Please Try Again Later.';
-                                responseMessage.classList.add('failure');
-                            });
-                        });
-                    </script>
-
                 </div>
             </div>
         </div>
+        <img src="Images/arrow.png" alt="Go Down" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>
 
-    <!-- FOOTER SECTION STARTS -->
+    <section id="projects">
+        <P class="section__text__p1">Browse My Recent</P>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="Images/Project-1.jpg" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shawon1024'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shawon1024'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="Images/Project-2.jpg" alt="Project 2" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shawon1024'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shawon1024'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="Images/Project-3.jpg" alt="Project 3" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shawon1024'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shawon1024'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="Images/arrow.png" alt="Go Down" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="Images/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:shawon1024@gmail.com">Shawon1024@Gmail.Com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="Images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://linkedin.com/in/Shawon1024">My LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <span>Created By <a href="Index.html#about">ShawOnline</a> | <span class="fa fa-copyright" aria-hidden="true"></span> 2022-25 All Rights Reserved. </span>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2022-25 <a href="Index.html#about">ShawOnline</a>. All Rights Reserved.</p>
     </footer>
+
+    <script src="JavaScript/JavaScript.js"></script>
 
 </body>
     
