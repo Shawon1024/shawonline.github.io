@@ -421,6 +421,19 @@ footer {
     margin: 0 1rem;
 }
 
+footer-a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+footer-a:hover {
+    color: #2d4c69;
+    text-decoration: none;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
 footer p {
     text-align: center;
 }
