@@ -421,13 +421,13 @@ footer {
     margin: 0 1rem;
 }
 
-footer footer-a {
+footer .footer-a {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
 }
 
-footer footer-a:hover {
+footer .footer-a:hover {
     color: #2d4c69;
     text-decoration: none;
     text-underline-offset: 1rem;
