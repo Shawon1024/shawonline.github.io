@@ -52,6 +52,7 @@ section {
     flex-wrap: wrap;
     gap: .5rem;
     margin: .75rem 0 1rem;
+    justify-content: center;
 }
 
 .hero-highlights .chip {
@@ -65,11 +66,15 @@ section {
     white-space: nowrap;
 }
 
+.hero-highlights .chip:hover {
+    background: rgba(109, 188, 199, 0.25);
+}
+
 .note {
     margin-top: 1rem;
     font-size: .9rem;
     color: var(--muted);
-    text-align: left;
+    text-align: center;
 }
 
 a {
@@ -674,4 +679,5 @@ footer .footer-a:hover {
 footer p {
     text-align: center;
 }
+
 
