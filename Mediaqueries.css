@@ -1,3 +1,7 @@
+@media (prefers-reduced-motion: reduce) {
+  .meter > span{ transition:none; }
+}
+
 @media screen and (max-width: 1400px) {
     #profile {
       height: 83vh;
@@ -23,10 +27,23 @@
       display: flex;
     }
 
+    #projects .about-containers {
+      grid-template-columns: repeat(2, minmax(260px, 1fr));
+    }
+
     #experience,
     .experience-details-container {
       margin-top: 2rem;
+      flex-direction: row;
     }
+
+    #experience .about-containers {
+    grid-template-columns: 1fr;
+  }
+
+    .skills-grid {
+    grid-template-columns: 1fr;
+  }
 
     #profile,
     .section-container {
@@ -54,13 +71,28 @@
 
     .about-containers {
       margin-top: 0;
+      flex-wrap: nowrap;
     }
   }
+
+  @media (max-width:900px) {
+  
+}
+
+@media (max-width: 700px) {
+    #projects .about-containers {
+      grid-template-columns: 1fr;
+    }
+}
   
   @media screen and (max-width: 600px) {
     #contact,
     footer {
       height: 40vh;
+    }
+
+    section {
+      margin: 0 1rem;
     }
 
     #profile {
@@ -100,6 +132,10 @@
       font-size: 1.5rem;
     }
 
+    .logo-img {
+      height: 100px;
+    }
+
     .nav-links {
       flex-direction: column;
       gap: 0.5rem;
@@ -123,5 +159,4 @@
     .text-container {
       text-align: justify;
     }
-  }
-  
+}
