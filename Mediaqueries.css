@@ -83,6 +83,16 @@
     #projects .about-containers {
       grid-template-columns: 1fr;
     }
+
+    #contact .contact-form {
+      max-width: 100%;
+      margin: 1rem 0;
+      padding: 1rem;
+    }
+
+    #contact .btn-container {
+      justify-content: center;
+    }
 }
   
   @media screen and (max-width: 600px) {

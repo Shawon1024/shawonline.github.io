@@ -553,31 +553,77 @@ article .icon {
     scroll-margin-top: calc(var(--nav-h) + 24px);
 }
 
-.contact-info-upper-container {
+#contact .contact-form {
+    width: 100%;
+    max-width: 720px;
+    margin: 2rem auto;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+
+#contact .contact-form:hover {
+    box-shadow: 0 10px 24px rgba(0,0,0,.06);
+    transform: translateY(-2px);
+}
+
+#contact .contact-form .hp {
+    display: none;
+}
+
+.contact-form .form-row {
     display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-    margin: 2rem auto ;
-    padding: 0.5rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
 }
 
-.contact-info-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem;;
+.contact-form label {
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.35rem;
 }
 
-.contact-info-container p{
-    font-size: larger;
+#contact .contact-form input,
+#contact .contact-form textarea {
+    appearance:none;
+    border:1px solid var(--border);
+    border-radius: 0.8rem;
+    padding: 0.75rem 1rem;
+    font: inherit;
+    color: var(--text);
+    background:#fff;
+    outline: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
 }
 
-.contact-icon {
-    cursor: default;
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+    border-color: var(--accent-2);
+    box-shadow: 0 0 0 3px rgba(109,188,199,.25);
+}
+
+#contact .contact-form input:invalid,
+#contact .contact-form textarea:invalid {
+  box-shadow:none; /* avoid red glow in some browsers */
+}
+
+#contact .btn-container {
+    justify-content: flex-start;
+}
+
+#contact .form-status {
+    margin-top: 1rem;
+    color: var(--muted);
+}
+
+#contact .form-status.success {
+    color: #0f9d58;
+}
+
+#contact .form-status.error {
+    color: #d93025;
 }
 
 /* FOOTER SECTION */
