@@ -47,9 +47,29 @@ section {
     min-height: unset;
 }
 
-.chip {
-    background: linear-gradient(90deg, var(--navy), var(--teal));
-    color:#fff; padding:.25rem .6rem; border-radius:999px; font-size:.8rem;
+.hero-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: .75rem 0 1rem;
+}
+
+.hero-highlights .chip {
+    background: rgba(109, 188, 199, 0.15);
+    color:var(--navy);
+    padding:.25rem .6rem;
+    border-radius:999px;
+    font-size:.8rem;
+    font-weight: 500;
+    letter-spacing: .2px;
+    white-space: nowrap;
+}
+
+.note {
+    margin-top: 1rem;
+    font-size: .9rem;
+    color: var(--muted);
+    text-align: left;
 }
 
 a {
@@ -77,7 +97,7 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .btn-color-1:hover {
-    background: var(--navy-700);
+    background: var(--muted);
     cursor: pointer;
 }
 
@@ -154,14 +174,14 @@ nav.scrolled {
 }
 
 .logo-img {
-    height: 160px;
+    height: 32px;
     width: 100%;
     margin: 10px;
     display: block;
 }
 
 .logo:hover {
-    cursor: default;
+    cursor: pointer;
 }
 
 /* HAMBURGER MENU */
